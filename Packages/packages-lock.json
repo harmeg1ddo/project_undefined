@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.siratim.tools": {
+      "version": "https://github.com/Shorotshishir/EditorTools.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "d9f8f7ee49ac95d173e9e11f290c8fe1bf90f0ff"
+    },
     "com.unity.collab-proxy": {
       "version": "2.0.4",
       "depth": 0,

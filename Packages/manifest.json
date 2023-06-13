@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.siratim.tools": "https://github.com/Shorotshishir/EditorTools.git",
     "com.unity.collab-proxy": "2.0.4",
     "com.unity.feature.development": "1.0.1",
     "com.unity.textmeshpro": "3.0.6",
