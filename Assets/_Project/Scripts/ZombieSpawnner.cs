@@ -10,22 +10,16 @@ public class ZombieSpawnner : MonoBehaviour
     private float lastSpawnedTime = 0f;
     private float currentTime = 0f;
 
-    void Start()
-    {
-
-    }
-
-
     void Update()
     {
         if (currentTime - lastSpawnedTime >= spawnDelay)
         {
             lastSpawnedTime = currentTime;
-            GameObject tempZombie = zombiePool.get_ZombieType_A();
+            GameObject tempZombie = zombiePool.GetZombieTypeA();
             if (tempZombie != null)
             {
                 tempZombie.transform.parent = spawnPoints[Random.Range(0, spawnPoints.Count)].transform;
-                tempZombie.transform.localPosition = new Vector3(0, 0, 0);
+                tempZombie.transform.localPosition = Vector3.zero;
             }
         }
         else

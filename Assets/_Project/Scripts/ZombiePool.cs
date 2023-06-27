@@ -5,40 +5,33 @@ using UnityEngine;
 
 public class ZombiePool : MonoBehaviour
 {
-    public GameObject ZombieType_A;
-    public int PoolSize_ZombieType_A;
-    private List<GameObject> _Pool_ZombieType_A;
+    public GameObject zombieTypeA;
+    public int poolSizeZombieTypeA;
+    private List<GameObject> _PoolZombieTypeA;
 
     // Start is called before the first frame update
     void Start()
     {
-        _Pool_ZombieType_A = new List<GameObject>();
-        for (int i = 0; i <= PoolSize_ZombieType_A; i++)
+        _PoolZombieTypeA = new List<GameObject>();
+        for (int i = 0; i <= poolSizeZombieTypeA; i++)
         {
-            GameObject temp= Instantiate(ZombieType_A,
+            GameObject temp= Instantiate(zombieTypeA,
                 new Vector3(gameObject.transform.localPosition.x, gameObject.transform.localPosition.y, gameObject.transform.localPosition.z), 
                 Quaternion.identity);
             temp.transform.parent = gameObject.transform;
-            temp.transform.localPosition = new Vector3(0, 0, 0);
+            temp.transform.localPosition = Vector3.zero;
             temp.SetActive(false);
-            _Pool_ZombieType_A.Add(temp);
+            _PoolZombieTypeA.Add(temp);
         }
     }
-
-    // Update is called once per frame
-    void Update()
+    public GameObject GetZombieTypeA()
     {
-        
-    }
-
-    public GameObject get_ZombieType_A()
-    {
-        for (int i = 0; i <= PoolSize_ZombieType_A; i++)
+        for (int i = 0; i <= poolSizeZombieTypeA; i++)
         {
-            if (!_Pool_ZombieType_A[i].activeSelf)
+            if (!_PoolZombieTypeA[i].activeSelf)
             {
-                _Pool_ZombieType_A[i].SetActive(true);
-                return _Pool_ZombieType_A[i];
+                _PoolZombieTypeA[i].SetActive(true);
+                return _PoolZombieTypeA[i];
             }
         }
         return null;
