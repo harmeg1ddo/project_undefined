@@ -1579,8 +1579,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b960fe9cc20b394fb07eab10ebabcf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ZombieType_A: {fileID: 7044150976823308138, guid: eb14997e19cd7da4fbd4c14380809aac, type: 3}
-  PoolSize_ZombieType_A: 5
+  zombieTypeA: {fileID: 7044150976823308138, guid: eb14997e19cd7da4fbd4c14380809aac, type: 3}
+  poolSizeZombieTypeA: 10
 --- !u!4 &403912325
 Transform:
   m_ObjectHideFlags: 0
@@ -3628,14 +3628,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269038861}
-  m_LocalRotation: {x: 0.16150062, y: -0, z: -0, w: 0.9868726}
-  m_LocalPosition: {x: 0, y: 5.96, z: -7.36}
+  m_LocalRotation: {x: 0.19344798, y: -0.6801298, z: 0.19344789, w: 0.68013185}
+  m_LocalPosition: {x: 11.86, y: 6.38, z: 4.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 18.588, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 31.754, y: -90, z: 0}
 --- !u!1 &1295878043
 GameObject:
   m_ObjectHideFlags: 0
@@ -4636,7 +4636,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708946304}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 9}
+  m_LocalPosition: {x: 0, y: 1, z: -0.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
